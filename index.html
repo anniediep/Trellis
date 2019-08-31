@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trellis</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Trellis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0 search-hide">
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Household</a>
+                        <a class="dropdown-item" href="#">Outdoors</a>
+                        <a class="dropdown-item" href="#">Tools</a>
+                        <a class="dropdown-item" href="#">Luxury</a>
+                        <a class="dropdown-item" href="#">Electronics</a>
+                        <a class="dropdown-item" href="#">Baby & Pets</a>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Anything">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                  </div>
+                </div>
+            
+          </form>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">SAVED <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">RENTALS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MESSAGES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">HELP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="jumbotron jumbotron-fluid row">
+        <div class="searchLg">
+          <h1>Rent from people in your community on Trellis</h1>
+          <p>Fill in the gps in your life: discover your passions, go to that one event, hang a picture, explore the possibilities.</p>
+          <!--Search Item-->
+          <div class="formLabel">Item</div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Household</a>
+                  <a class="dropdown-item" href="#">Outdoors</a>
+                  <a class="dropdown-item" href="#">Tools</a>
+                  <a class="dropdown-item" href="#">Luxury</a>
+                  <a class="dropdown-item" href="#">Electronics</a>
+                  <a class="dropdown-item" href="#">Baby & Pets</a>
+              </div>
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Anything">
+          </div>
+          <!--Location-->
+          <div class="formLabel">Location</div>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-map-marker-alt"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Your city, neightborhood, or community" aria-label="Location" aria-describedby="basic-addon1">
+            </div>
+          <!--Rental Dates-->
+          <div class="row dates">
+            <div class="col">
+              <div class="formLabel">Check-Out</div>
+              <div class="input-group">
+                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder="mm/dd/yyyy">
+                <div class="input-group-append">
+                  <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col"> 
+              <div class="formLabel">Check-In</div>
+                <div class="input-group">
+                  <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder="mm/dd/yyyy">
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Search</button>
+        </div> 
+      </div>
+
+      <main class="container">
+        <div>
+          <h2>Trending in your community</h2>
+          <div class="card-deck">
+              <div class="card">
+                <img src="img/charcuterie.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/charcuterie.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/charcuterie.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Item Name</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div>
+          <h2>Testimonials</h2>
+          <div class="card-deck">
+              <div class="card">
+                <img src="img/camera.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <div class="row rating">
+                      <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                      <div class="ml-auto"><i class="fas fa-user"></i></div>
+                    </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/camera.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <div class="row rating">
+                      <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                      <div class="ml-auto"><i class="fas fa-user"></i></div>
+                    </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/camera.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Item Name</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <div class="row rating">
+                    <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                    <div class="ml-auto"><i class="fas fa-user"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+          
+        <div>
+            <h2>Renting with Trellis</h2>
+            <div class="divider"></div>
+            <div class="row">
+              <div class="col value">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Security</h3>
+              </div>
+              <div class="col value">
+                  <i class="fas fa-users"></i>
+                  <h3>Community</h3>
+              </div>
+              <div class="col value">
+                  <i class="fas fa-sync-alt"></i>
+                  <h3>Circular Economy</h3>
+              </div>
+            </div>
+        </div>
+      </main> 
+
+      <footer>
+
+      </footer>
+
+
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/d635a356d3.js"></script>
+</body>
+</html>
