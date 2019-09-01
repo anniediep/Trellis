@@ -33,6 +33,26 @@ footer {
     border-color: #254435;
 }
 
+.cost {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+}
+
+.descGrid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "description request"
+}
+
+.description {
+    grid-area: description;
+}
+
 .show>.btn-outline-primary.dropdown-toggle {
     background-color: #71A633;
     border-color: #71A633;
@@ -69,6 +89,12 @@ footer {
     width: 100%;
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .navbar-brand, .nav-link{
     color: rgba(255,255,255,1) !important;
 }
@@ -81,8 +107,54 @@ footer {
     margin: auto 0;
 }
 
+.pic {
+    width: 100%;
+    height: auto;
+}
+
+.picGrid {
+    display: grid;
+    height: 50%;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "wPic qPic1 qPic2" 
+    "wPic qPic3 qPic4"
+}
+
+.qPic1 {
+    grid-area: qPic1;
+}
+.qPic2 {
+    grid-area: qPic2;
+}
+.qPic3 {
+    grid-area: qPic3;
+}
+.qPic4 {
+    grid-area: qPic4;
+}
+
 .rating {
     padding: 0 5%;
+}
+
+.request {
+    grid-area: request;
+}
+
+.requestBox {
+    background-color:white;
+    border: 1px solid #E1E3E2;
+    border-radius: 10px;
+    height: auto;
+    padding: 40px 40px;
+    width: 500px;
+}
+
+.requestHeader{
+    border-bottom: 1px solid #E1E3E2;
+    padding-bottom: 20px;
 }
 
 .search-hide {
@@ -92,6 +164,7 @@ footer {
 
 .searchLg {
     background-color:white;
+    border: 1px solid #E1E3E2;
     border-radius: 10px;
     height: auto;
     margin-left: 15%;
@@ -103,6 +176,11 @@ footer {
     background-color: rgba(113,166,51,.13);
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
 .value {
     text-align: center;
     padding-bottom: 80px;
@@ -111,6 +189,10 @@ footer {
 
 .value i{
     font-size: 100px;
+}
+
+.wPic {
+    grid-area: wPic;
 }
 
 @media (max-width: 991.98px) { /*medium devices (tablets)*/
@@ -135,6 +217,22 @@ footer {
 }
 
 @media (max-width: 575.98px) { /*extra small devices (portrait phones)*/
+    .picGrid{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "wPic qPic1" 
+        "wPic qPic2"
+    }
+    
+    .qPic3{
+        display: none;
+    }
+
+    .qPic4{
+        display: none;
+    }
+
     .searchLg {
         width: 425px;
     }
