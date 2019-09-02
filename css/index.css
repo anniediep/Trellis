@@ -1,11 +1,32 @@
+body {
+    color: #202C26;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
 h2 {
+    font-size: 40px;
+    font-weight: 500;
     margin-bottom: 10px;
     margin-top: 30px;
 }
 
 h3 {
+    font-size: 25px;
     margin-top: 20px;
 }
+
+ i {
+     color: #71A633;
+ }
 
 main {
     margin-bottom: 40px;
@@ -24,6 +45,33 @@ p {
 
 section {
     margin: 20px 0;
+}
+
+.avatar {
+    background-color: #254435;
+    border-radius: 40px;
+    height: 70px;
+    width: 70px;
+}
+
+.avatar i {
+    color: white;
+    font-size: 30px;
+}
+
+.avatarGroup {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 70px;
+}
+
+.avatarName {
+    color: #7F7F7F;
+    font-size: 14px;
+    padding-top: 5px;
 }
 
 .bg-light {
@@ -53,8 +101,8 @@ section {
 
 .descGrid {
     display: grid;
-    height: 100vh;
-    grid-template-columns: 3fr 2fr;
+    height: auto;
+    grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "description request";
@@ -110,6 +158,19 @@ section {
     margin-bottom: 0;
 }
 
+.lgBody {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.location i {
+    color: #6c757d;
+}
+
+.navbar i {
+    color: white;
+}
+
 .navbar-brand, .nav-link{
     color: rgba(255,255,255,1) !important;
 }
@@ -120,6 +181,10 @@ section {
 
 .nav-search {
     margin: auto 0;
+}
+
+.page-link {
+    color: #254435;
 }
 
 .pic {
@@ -135,6 +200,16 @@ section {
     grid-template-areas: 
     "wPic qPic1 qPic2" 
     "wPic qPic3 qPic4";
+}
+
+.postDate {
+    color: #7F7F7F;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.productSection {
+    margin: 40px 0;
 }
 
 .qPic1 {
@@ -156,7 +231,7 @@ section {
 
 .request {
     grid-area: request;
-    padding: 0 20px;
+    padding-left: 40px;
 }
 
 .requestBox {
@@ -165,12 +240,20 @@ section {
     border-radius: 10px;
     height: auto;
     padding: 40px 40px;
-    width: 500px;
+    width: 400px;
 }
 
 .requestHeader{
     border-bottom: 1px solid #E1E3E2;
     padding-bottom: 20px;
+}
+
+.reviewHeader {
+    margin-left: 30px;
+}
+
+.reviewInfo {
+    margin-bottom: 20px;
 }
 
 .search-hide {
@@ -185,7 +268,7 @@ section {
     height: auto;
     margin-left: 15%;
     padding: 40px 40px;
-    width: 500px;
+    width: 550px;
 }
 
 .secondaryNav {
@@ -195,6 +278,10 @@ section {
 .sticky {
     position: sticky;
     top: 0;
+}
+
+.socials {
+    width: 70px;
 }
 
 .total {
@@ -247,6 +334,12 @@ section {
 }
 
 @media (max-width: 575.98px) { /*extra small devices (portrait phones)*/
+    .jumbotron {
+        margin: 0 auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
     .picGrid{
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
