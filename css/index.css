@@ -1,23 +1,29 @@
-
-
 h2 {
-    padding-bottom: 20px;
-    padding-top: 40px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 h3 {
-    padding-top: 30px;
+    margin-top: 20px;
 }
 
 main {
-    padding-bottom: 20px;
-    padding-top: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 footer {
     background-color: #254435;
     width: 100%;
     height: 300px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+section {
+    margin: 20px 0;
 }
 
 .bg-light {
@@ -40,13 +46,18 @@ footer {
     margin-bottom: .5rem;
 }
 
+.chargeDesc {
+    border-bottom: 1px solid #E1E3E2;
+    padding-top: 10px;
+}
+
 .descGrid {
     display: grid;
     height: 100vh;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "description request"
+    "description request";
 }
 
 .description {
@@ -80,10 +91,6 @@ footer {
     column-count: 4;
   }
 
-.dates {
-    padding-bottom: 20px !important;
-}
-
 .divider {
     border-top: 1px solid black;
     width: 100%;
@@ -93,6 +100,14 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.infoText {
+    font-size: 12px;
+}
+
+.jumbotron {
+    margin-bottom: 0;
 }
 
 .navbar-brand, .nav-link{
@@ -119,7 +134,7 @@ footer {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "wPic qPic1 qPic2" 
-    "wPic qPic3 qPic4"
+    "wPic qPic3 qPic4";
 }
 
 .qPic1 {
@@ -141,6 +156,7 @@ footer {
 
 .request {
     grid-area: request;
+    padding: 0 20px;
 }
 
 .requestBox {
@@ -181,6 +197,10 @@ footer {
     top: 0;
 }
 
+.total {
+    font-weight: 600;
+}
+
 .value {
     text-align: center;
     padding-bottom: 80px;
@@ -196,6 +216,16 @@ footer {
 }
 
 @media (max-width: 991.98px) { /*medium devices (tablets)*/
+    .descGrid {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "description" 
+        "request";
+    }
+
     .searchLg {
         width: 450px;
     }
@@ -222,7 +252,7 @@ footer {
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "wPic qPic1" 
-        "wPic qPic2"
+        "wPic qPic2";
     }
     
     .qPic3{

@@ -66,36 +66,43 @@
     <main class="container">
         <div class="descGrid">
             <div class="description">
-                <div>
-                    <h1>Drill</h1>
+                <section>
+                    <h1>Easy to use Drill</h1>
+                    <div></div>
                     <p></p>
-                </div>
-                <div>
+                </section>
+                <section>
                     <h2>Notes from owner</h2>
                     <p></p>
-                </div>
-                <div>
+                </section>
+                <section>
                     <h2>Availability</h2>
-                </div>
-                <div>
+                </section>
+                <section>
                     <h2>Ask the owner</h2>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1"></label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ask your question here."></textarea>
+                    </div>
+                    <div class="d-flex flex-row-reverse">
                         <button type="submit" class="btn btn-primary">Ask Question</button>
                     </div>
-                </div>
-                <div>
+                </section>
+                <section>
                     <h2>Reviews</h2>
-                </div>
+                </section>
             </div>
             <div class="request">
                 <div class="sticky">
                     <div class="requestBox">
-                        <div class="requestHeader"><span class="cost">$8</span> per day</div>
+                        <div class="requestHeader"><span class="cost">$8</span> per day
+                        <div class="row rating">
+                            <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 56 Reviews</div>
+                        </div>
+                    </div>
                         
                         <!--Rental Dates-->
-                        <div class="row dates">
+                        <section class="row">
                             <div class="col">
                                 <div class="formLabel">Check-Out</div>
                                 <div class="input-group">
@@ -128,7 +135,28 @@
                                     </div>
                                 </div>
                             </div> 
-                        </div>
+                        </section>
+                        <section>
+                            <div class="chargeDesc d-flex justify-content-between">
+                                <p>$8 x 3 days</p>
+                                <p>$24</p>
+                            </div>
+                            <div class="chargeDesc d-flex justify-content-between">
+                                <p>Deposit <i class="fas fa-info-circle"></i></p>
+                                <p>$30</p>
+                            </div>
+                            <div class="chargeDesc d-flex justify-content-between">
+                                <p>Taxes and fees</p>
+                                <p>$3</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="total d-flex justify-content-between">
+                                <p>Total</p>
+                                <p>$57</p>
+                            </div>
+                            <div class="infoText">Price does not include optional Delivery Fees</div>
+                        </section>
                             <button type="button" class="btn btn-primary btn-lg btn-block">Search</button>
                     </div>
                 </div>
