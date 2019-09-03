@@ -74,7 +74,7 @@ section {
     padding-top: 5px;
 }
 
-.bg-light {
+.bg-dark {
     background-color: #254435 !important;
 }
 
@@ -172,10 +172,6 @@ section {
 }
 
 .navbar-brand, .nav-link{
-    color: rgba(255,255,255,1) !important;
-}
-
-.navbar-toggler-icon {
     color: rgba(255,255,255,1) !important;
 }
 
@@ -303,6 +299,19 @@ section {
 }
 
 @media (max-width: 991.98px) { /*medium devices (tablets)*/
+    .centerContent {
+        display: none;
+    }
+
+    .container {
+        display: unset;
+    }
+
+    .description {
+        margin-left:5%;
+        margin-right: 5%;
+    }
+
     .descGrid {
         display: grid;
         height: 100vh;
@@ -313,8 +322,36 @@ section {
         "request";
     }
 
+    .request {
+        padding: 0;
+    }
+
+    .requestBox {
+        align-items: center;
+        display: flex;
+        border-radius: 0px;
+        height: auto;
+        justify-content: space-between;
+        padding: 15px 40px;
+        width: 100%;
+    }
+
+    .requestHeader {
+        border: none;
+        padding: 0;
+        width: 50%;
+    }
+
     .searchLg {
         width: 450px;
+    }
+
+    .sticky {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: unset;
+        width: 100%;
     }
 }
 
