@@ -166,6 +166,9 @@ section {
 }
 
 .jumbotron {
+    background-image: url("../img/cameraCutout.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 0;
 }
 
@@ -322,13 +325,13 @@ section {
         display: none;
     }
 
-    .container {
+    #desc .container {
         display: unset;
     }
 
     .description {
-        margin-left:5%;
-        margin-right: 5%;
+        margin-left:2%;
+        margin-right: 2%;
     }
 
     .descGrid {
