@@ -79,16 +79,37 @@ section {
     margin: 20px 0;
 }
 
+.user {
+    background-color: #67982F;
+    border-radius: 40px;
+    height: 40px;
+    overflow: hidden;
+    width: 40px;
+}
+
 .avatar {
     background-color: #254435;
     border-radius: 40px;
     height: 55px;
+    overflow: hidden;
     width: 55px;
 }
 
-.avatar i {
+.avatarThumb {
+    background-color: #254435;
+    border-radius: 25px;
+    height: 24px;
+    overflow: hidden;
+    width: 24px;
+}
+
+.avatar i, .avatarThumb i {
     color: white;
-    font-size: 25px;
+    font-size: 14px;
+}
+
+.avatarImg {
+    width: 55px;
 }
 
 .avatarGroup {
