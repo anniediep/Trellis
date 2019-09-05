@@ -48,6 +48,7 @@ footer {
     background-color: #254435;
     width: 100%;
     height: auto;
+    z-index: -1;;
 }
 
 footer p, footer i {
@@ -123,19 +124,6 @@ section {
     background-color: #254435 !important;
 }
 
-.calendarPic {
-    width: 100%;
-}
-
-.card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
-}
-
-.filter {
-    margin: 0 5px;
-}
-
 .btn-outline-primary {
     color: #254435;
     border-color: #254435;
@@ -144,40 +132,6 @@ section {
 .btn-outline-secondary:hover {
     background-color: rgb(37,68,53);
     border-color: rgb(37,68,53);
-}
-
-.show>.btn-outline-secondary.dropdown-toggle {
-    background-color: #254435;
-    border-color: #254435;
-}
-
-.cardButton, .cardButton:hover {
-    color: black;
-}
-
-.cost {
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: .5rem;
-}
-
-.chargeDesc {
-    border-bottom: 1px solid #E1E3E2;
-    padding-top: 10px;
-}
-
-.descGrid {
-    display: grid;
-    height: auto;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "description request";
-}
-
-.description {
-    grid-area: description;
 }
 
 .show>.btn-outline-primary.dropdown-toggle {
@@ -200,14 +154,23 @@ section {
     border: 1px solid white;
 }
 
+.show>.btn-outline-secondary.dropdown-toggle {
+    background-color: #254435;
+    border-color: #254435;
+}
+
 .cal {
     width: 50%;
     padding: 3%;
 }
 
 .calendar {
-    background-color: rgba(113,166,51,.13);
     height: auto;
+    width: 100%;
+}
+
+.calendarPic {
+    overflow: hidden;
     width: 100%;
 }
 
@@ -215,13 +178,52 @@ section {
     margin: 16px auto;
 }
 
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.cardButton, .cardButton:hover {
+    color: black;
+}
+
 .card-columns {
     column-count: 4;
-  }
+}
+
+.chargeDesc {
+    border-bottom: 1px solid #E1E3E2;
+    padding-top: 10px;
+}
+
+.cost {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+}
+
+.descGrid {
+    display: grid;
+    height: auto;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "description request";
+}
+
+.description {
+    grid-area: description;
+}
+
 
 .divider {
     border-top: 1px solid black;
     width: 100%;
+}
+
+.filter {
+    margin: 0 5px;
 }
 
 .flex {
