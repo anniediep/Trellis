@@ -124,6 +124,16 @@ section {
     border-color: #254435;
 }
 
+.btn-outline-secondary:hover {
+    background-color: rgb(37,68,53);
+    border-color: rgb(37,68,53);
+}
+
+.show>.btn-outline-secondary.dropdown-toggle {
+    background-color: #254435;
+    border-color: #254435;
+}
+
 .cardButton, .cardButton:hover {
     color: black;
 }
@@ -170,6 +180,7 @@ section {
 
 .btn-primary:hover {
     background-color: #254435;
+    border: 1px solid white;
 }
 
 .cal {
@@ -210,6 +221,10 @@ section {
 .footerSection{
     padding: 40px 20px !important;
     width: auto;
+}
+
+.form-control {
+    border-color: rgb(37,68,53);
 }
 
 .infoText {
@@ -315,6 +330,10 @@ section {
 .requestHeader{
     border-bottom: 1px solid #E1E3E2;
     padding-bottom: 20px;
+}
+
+.review {
+    border-top: 1px solid #E1E3E2; 
 }
 
 .reviewHeader {
