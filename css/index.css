@@ -1,6 +1,17 @@
+a {
+    color: white;
+    margin-bottom: 5px;
+}
+
+a:hover {
+    color: #67982F;
+    text-decoration: none;
+}
+
 body {
     color: #202C26;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,7 +47,28 @@ main {
 footer {
     background-color: #254435;
     width: 100%;
-    height: 300px;
+    height: auto;
+}
+
+footer p, footer i {
+    color: white;
+    margin-bottom: 5px;
+}
+
+a:hover {
+    color: #67982F;
+    cursor: pointer;
+}
+
+footer .socials {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer i:hover {
+    color: #67982F !important;
+    cursor: pointer;
 }
 
 p {
@@ -78,13 +110,22 @@ section {
     background-color: #254435 !important;
 }
 
-.btn {
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.filter {
     margin: 0 5px;
 }
 
 .btn-outline-primary {
     color: #254435;
     border-color: #254435;
+}
+
+.cardButton, .cardButton:hover {
+    color: black;
 }
 
 .cost {
@@ -159,6 +200,16 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerSection{
+    padding: 40px 20px !important;
+    width: auto;
 }
 
 .infoText {
@@ -299,7 +350,7 @@ section {
 }
 
 .socials {
-    width: 125px;
+    width: 150px;
     padding: 10px 10px;
 }
 
@@ -328,6 +379,7 @@ section {
 }
 
 @media (max-width: 991.98px) { /*medium devices (tablets)*/
+
     .centerContent {
         display: none;
     }
@@ -351,8 +403,20 @@ section {
         "request";
     }
 
+    .footerSection{
+        padding: 40px 10px !important;
+    }
+
+    .productFooter {
+        position: relative;
+        bottom:0px;
+        left: 0px;
+
+    }
+
     .request {
         padding: 0;
+        z-index: 1;
     }
 
     .requestBox {
@@ -385,9 +449,37 @@ section {
 }
 
 @media (max-width: 767.98px) { /*small devices (landscape phones)*/
+
+    footer .socials {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+    
     .cal {
         width: 70%;
         padding: 5%;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .footerContainer {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 40px;
+    }
+
+    .footerLinks {
+        text-align: center;
+    }
+
+    .footerSection {
+        padding: 10px 20px !important;
+        width: 100%;
     }
 
     .oneCal {
@@ -396,6 +488,13 @@ section {
 
     .searchLg {
         margin: 0 auto;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 
     .value {
