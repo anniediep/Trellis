@@ -79,14 +79,6 @@ section {
     margin: 20px 0;
 }
 
-.user {
-    background-color: #67982F;
-    border-radius: 40px;
-    height: 40px;
-    overflow: hidden;
-    width: 40px;
-}
-
 .avatar {
     background-color: #254435;
     border-radius: 40px;
@@ -129,6 +121,10 @@ section {
 
 .bg-dark {
     background-color: #254435 !important;
+}
+
+.calendarPic {
+    width: 100%;
 }
 
 .card:hover {
@@ -211,7 +207,7 @@ section {
 
 .calendar {
     background-color: rgba(113,166,51,.13);
-    height: 200px;
+    height: auto;
     width: 100%;
 }
 
