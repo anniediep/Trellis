@@ -231,6 +231,11 @@ section {
     font-size: 12px;
 }
 
+.input-group-text {
+    background-color: white;
+    border: 1px solid #254435;
+}
+
 .jumbotron {
     background-image: url("../img/cameraCutout.png");
     background-repeat: no-repeat;
