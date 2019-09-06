@@ -465,7 +465,7 @@ section {
         display: grid;
         height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 5px;
         grid-template-areas: 
         "description" 
         "request";
@@ -479,7 +479,7 @@ section {
         position: relative;
         bottom:0px;
         left: 0px;
-
+        padding-bottom: 80px;
     }
 
     .request {
