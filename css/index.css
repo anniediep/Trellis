@@ -196,6 +196,12 @@ section {
     padding-top: 10px;
 }
 
+.conversation {
+    background-color: mistyrose;
+    height: 100vh;
+    width: 70%;
+}
+
 .cost {
     font-size: 2rem;
     font-weight: 500;
@@ -269,6 +275,25 @@ section {
 
 .location i {
     color: #6c757d;
+}
+
+.messages {
+    background-color: yellow;
+    height: 100vh;
+    width: 30%;
+}
+
+.messagesBox{
+    background-color: white;
+    border-radius: 10px;
+    height: 500px;
+    width:100%;
+}
+
+.messageHeader{
+    background-color: lightgray;
+    height:55px;
+    width: 100%;
 }
 
 .month {
@@ -438,7 +463,7 @@ section {
 
     .descGrid {
         display: grid;
-        height: 100vh;
+        height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
