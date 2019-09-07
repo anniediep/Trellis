@@ -79,6 +79,9 @@ p {
 section {
     margin: 20px 0;
 }
+svg {
+    height: 25px;
+}
 
 .avatar {
     background-color: #254435;
@@ -262,7 +265,7 @@ section {
 }
 
 .jumbotron {
-    background-image: url("../img/cameraCutout.png");
+    background-image: url("../img/MixerHero-04.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0;
